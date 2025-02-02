@@ -15,11 +15,10 @@ testeBancoInProduct = [];
 
 // Rota Inicial (Raiz)
 app.get('/', (req, res) => {
-    testeBancoInProduct.push(1);
-    console.log(testeBancoInProduct);
+    testeBancoInProduct.push('teste');
     
     const tegami = 'tegami';
-    res.render('init',{ tegami: tegami });
+    res.render('init',{ tegami: tegami, banco: testeBancoInProduct });
 });
 
 // Rota para carregar paginas no diretorio paginas
