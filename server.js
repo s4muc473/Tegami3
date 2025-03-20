@@ -11,11 +11,8 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.json());
 
-testeBancoInProduct = [];
-
 // Rota Inicial (Raiz)
 app.get('/', (req, res) => {
-    testeBancoInProduct.push('teste');
     
     const tegami = 'tegami';
     res.render('init',{ tegami: tegami, banco: testeBancoInProduct });
